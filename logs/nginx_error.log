@@ -1,0 +1,758 @@
+2018/05/29 11:35:46 [error] 10559#10559: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught LoanApi\Core\Router\Exceptions\HttpRouteNotFoundException: Route / is invalid. in /home/lucian.ene/www/loan-api/core/Router/Router.php:59
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(18): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:35:54 [error] 10559#10559: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught LoanApi\Core\Router\Exceptions\HttpRouteNotFoundException: Route /loans is invalid. in /home/lucian.ene/www/loan-api/core/Router/Router.php:59
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(18): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:35:54 [error] 10559#10559: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught LoanApi\Core\Router\Exceptions\HttpRouteNotFoundException: Route /loans is invalid. in /home/lucian.ene/www/loan-api/core/Router/Router.php:59
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(18): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:35:57 [error] 10559#10559: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught LoanApi\Core\Router\Exceptions\HttpRouteNotFoundException: Route / is invalid. in /home/lucian.ene/www/loan-api/core/Router/Router.php:59
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(18): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:36:42 [error] 10559#10559: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught LoanApi\Core\Router\Exceptions\HttpRouteNotFoundException: Route /api/v1 is invalid. in /home/lucian.ene/www/loan-api/core/Router/Router.php:59
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(18): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:36:48 [error] 10559#10559: *19 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught LoanApi\Core\Router\Exceptions\HttpRouteNotFoundException: Route /api/v1 is invalid. in /home/lucian.ene/www/loan-api/core/Router/Router.php:59
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(18): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:36:48 [error] 10559#10559: *21 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught LoanApi\Core\Router\Exceptions\HttpRouteNotFoundException: Route /api/v1 is invalid. in /home/lucian.ene/www/loan-api/core/Router/Router.php:59
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(18): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:51:30 [error] 10559#10559: *25 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting ';' in /home/lucian.ene/www/loan-api/autoloader.php on line 2" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:55:28 [error] 10559#10559: *27 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: class@anonymous::$namepaces in /home/lucian.ene/www/loan-api/autoloader.php on line 15
+PHP message: PHP Warning:  Invalid argument supplied for foreach() in /home/lucian.ene/www/loan-api/autoloader.php on line 17
+PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\Router\Router' not found in /home/lucian.ene/www/loan-api/index.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/lucian.ene/www/loan-api/index.php on line 21" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:56:29 [error] 10559#10559: *29 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:66
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(22): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:56:30 [error] 10559#10559: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:66
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(22): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:56:30 [error] 10559#10559: *33 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:66
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(22): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:56:30 [error] 10559#10559: *35 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:66
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(22): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:57:03 [error] 10559#10559: *37 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:66
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:57:03 [error] 10559#10559: *39 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:66
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:57:04 [error] 10559#10559: *41 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:66
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:57:06 [error] 10559#10559: *43 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught LoanApi\Core\Router\Exceptions\HttpRouteNotFoundException: Route /api/v1 is invalid. in /home/lucian.ene/www/loan-api/core/Router/Router.php:59
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:57:09 [error] 10559#10559: *45 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught LoanApi\Core\Router\Exceptions\HttpRouteNotFoundException: Route / is invalid. in /home/lucian.ene/www/loan-api/core/Router/Router.php:59
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:57:10 [error] 10559#10559: *47 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:66
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:57:38 [error] 10559#10559: *49 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:66
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:57:45 [error] 10559#10559: *51 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:66
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:57:46 [error] 10559#10559: *53 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:66
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:57:46 [error] 10559#10559: *55 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:66
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:58:57 [error] 10559#10559: *67 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:59:31 [error] 10559#10559: *73 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 11:59:39 [error] 10559#10559: *75 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:00:24 [error] 10559#10559: *83 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:00:46 [error] 10559#10559: *85 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:00:46 [error] 10559#10559: *87 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:00:47 [error] 10559#10559: *89 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:00:54 [error] 10559#10559: *91 FastCGI sent in stderr: "PHP message: PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 70" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:00:55 [error] 10559#10559: *93 FastCGI sent in stderr: "PHP message: PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 70" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:00:55 [error] 10559#10559: *95 FastCGI sent in stderr: "PHP message: PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 70" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:00:55 [error] 10559#10559: *97 FastCGI sent in stderr: "PHP message: PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 70" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:00:56 [error] 10559#10559: *99 FastCGI sent in stderr: "PHP message: PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 70" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:01:44 [error] 10559#10559: *103 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:01:53 [error] 10559#10559: *105 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\ApiController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:02:01 [error] 10559#10559: *107 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\Router\LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:02:02 [error] 10559#10559: *109 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\Router\LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:02:02 [error] 10559#10559: *111 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\Router\LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:02:10 [error] 10559#10559: *113 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:03:12 [error] 10559#10559: *117 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\Router\LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:03:18 [error] 10559#10559: *119 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:03:22 [error] 10559#10559: *121 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:03:23 [error] 10559#10559: *123 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:03:23 [error] 10559#10559: *125 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:03:23 [error] 10559#10559: *127 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:64
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:03:39 [error] 10559#10559: *129 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:63
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 63" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:03:40 [error] 10559#10559: *131 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:63
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 63" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:03:40 [error] 10559#10559: *133 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:63
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 63" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:03:40 [error] 10559#10559: *135 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Controllers\LoanController' not found in /home/lucian.ene/www/loan-api/core/Router/Router.php:63
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 63" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:28:14 [error] 10559#10559: *151 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Core\Http\Request::__construct(), 2 passed in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 72 and exactly 3 expected in /home/lucian.ene/www/loan-api/core/Http/Request.php:11
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(72): LoanApi\Core\Http\Request->__construct('/api/v1/loans', Array)
+#1 /home/lucian.ene/www/loan-api/index.php(17): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 11" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:28:20 [error] 10559#10559: *153 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Core\Http\Request::__construct(), 2 passed in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 72 and exactly 3 expected in /home/lucian.ene/www/loan-api/core/Http/Request.php:11
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(72): LoanApi\Core\Http\Request->__construct('/api/v1/loans', Array)
+#1 /home/lucian.ene/www/loan-api/index.php(17): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 11" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:29:20 [error] 10559#10559: *155 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught TypeError: Argument 2 passed to LoanApi\Core\Http\Request::__construct() must be of the type array, string given, called in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 72 and defined in /home/lucian.ene/www/loan-api/core/Http/Request.php:11
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(72): LoanApi\Core\Http\Request->__construct('GET', '/api/v1/loans', Array)
+#1 /home/lucian.ene/www/loan-api/index.php(17): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 11" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:29:21 [error] 10559#10559: *157 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught TypeError: Argument 2 passed to LoanApi\Core\Http\Request::__construct() must be of the type array, string given, called in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 72 and defined in /home/lucian.ene/www/loan-api/core/Http/Request.php:11
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(72): LoanApi\Core\Http\Request->__construct('GET', '/api/v1/loans', Array)
+#1 /home/lucian.ene/www/loan-api/index.php(17): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 11" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:29:21 [error] 10559#10559: *159 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught TypeError: Argument 2 passed to LoanApi\Core\Http\Request::__construct() must be of the type array, string given, called in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 72 and defined in /home/lucian.ene/www/loan-api/core/Http/Request.php:11
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(72): LoanApi\Core\Http\Request->__construct('GET', '/api/v1/loans', Array)
+#1 /home/lucian.ene/www/loan-api/index.php(17): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 11" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:29:21 [error] 10559#10559: *161 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught TypeError: Argument 2 passed to LoanApi\Core\Http\Request::__construct() must be of the type array, string given, called in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 72 and defined in /home/lucian.ene/www/loan-api/core/Http/Request.php:11
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(72): LoanApi\Core\Http\Request->__construct('GET', '/api/v1/loans', Array)
+#1 /home/lucian.ene/www/loan-api/index.php(17): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 11" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:30:01 [error] 10559#10559: *167 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Controllers\LoanController::index(), 0 passed in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 69 and exactly 1 expected in /home/lucian.ene/www/loan-api/controllers/LoanController.php:25
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(69): LoanApi\Controllers\LoanController->index()
+#1 /home/lucian.ene/www/loan-api/index.php(17): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 25" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:30:08 [error] 10559#10559: *169 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught TypeError: Argument 2 passed to LoanApi\Core\Http\Request::__construct() must be of the type array, string given, called in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 72 and defined in /home/lucian.ene/www/loan-api/core/Http/Request.php:11
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(72): LoanApi\Core\Http\Request->__construct('GET', '/api/v1/loans', Array)
+#1 /home/lucian.ene/www/loan-api/index.php(17): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 11" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:30:09 [error] 10559#10559: *171 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught TypeError: Argument 2 passed to LoanApi\Core\Http\Request::__construct() must be of the type array, string given, called in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 72 and defined in /home/lucian.ene/www/loan-api/core/Http/Request.php:11
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(72): LoanApi\Core\Http\Request->__construct('GET', '/api/v1/loans', Array)
+#1 /home/lucian.ene/www/loan-api/index.php(17): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 11" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 12:30:09 [error] 10559#10559: *173 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught TypeError: Argument 2 passed to LoanApi\Core\Http\Request::__construct() must be of the type array, string given, called in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 72 and defined in /home/lucian.ene/www/loan-api/core/Http/Request.php:11
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(72): LoanApi\Core\Http\Request->__construct('GET', '/api/v1/loans', Array)
+#1 /home/lucian.ene/www/loan-api/index.php(17): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 11" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:04:41 [error] 10559#10559: *179 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: key in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 32
+PHP message: PHP Notice:  Undefined variable: key in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 33
+PHP message: PHP Fatal error:  Uncaught LoanApi\Core\DependencyInjection\Exceptions\DependencyNotFoundException: No  is bound in the container. in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:33
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(19): LoanApi\Core\DependencyInjection\Container::get('request')
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 33" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:05:16 [error] 10559#10559: *183 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught TypeError: Argument 1 passed to LoanApi\Core\Http\Request::__construct() must be of the type array, string given, called in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 72 and defined in /home/lucian.ene/www/loan-api/core/Http/Request.php:11
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(72): LoanApi\Core\Http\Request->__construct('GET', '/api/v1/loans', Array)
+#1 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 11" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:10:37 [error] 10559#10559: *187 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught TypeError: Argument 1 passed to LoanApi\Core\Http\Request::__construct() must be of the type array, string given, called in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 72 and defined in /home/lucian.ene/www/loan-api/core/Http/Request.php:13
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(72): LoanApi\Core\Http\Request->__construct('GET', '/api/v1/loans', Array)
+#1 /home/lucian.ene/www/loan-api/index.php(24): LoanApi\Core\Router\Router->dispatch('GET', Array)
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 13" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:15:09 [error] 10559#10559: *197 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: requestPath in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 51
+PHP message: PHP Fatal error:  Uncaught LoanApi\Core\Router\Exceptions\HttpRouteNotFoundException: Route  is invalid. in /home/lucian.ene/www/loan-api/core/Router/Router.php:51
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 51" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:17:30 [error] 10559#10559: *215 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Core\Http\Request::isPath(), 0 passed in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 50 and exactly 1 expected in /home/lucian.ene/www/loan-api/core/Http/Request.php:36
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(50): LoanApi\Core\Http\Request->isPath()
+#1 [internal function]: LoanApi\Core\Router\Router->LoanApi\Core\Router\{closure}(Object(LoanApi\Core\Router\Route))
+#2 /home/lucian.ene/www/loan-api/core/Router/Router.php(51): array_filter(Array, Object(Closure))
+#3 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:18:14 [error] 10559#10559: *221 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Core\Http\Request::isPath(), 0 passed in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 51 and exactly 1 expected in /home/lucian.ene/www/loan-api/core/Http/Request.php:36
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(51): LoanApi\Core\Http\Request->isPath()
+#1 [internal function]: LoanApi\Core\Router\Router->LoanApi\Core\Router\{closure}(Object(LoanApi\Core\Router\Route))
+#2 /home/lucian.ene/www/loan-api/core/Router/Router.php(52): array_filter(Array, Object(Closure))
+#3 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:18:19 [error] 10559#10559: *223 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Core\Http\Request::isPath(), 0 passed in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 51 and exactly 1 expected in /home/lucian.ene/www/loan-api/core/Http/Request.php:36
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(51): LoanApi\Core\Http\Request->isPath()
+#1 [internal function]: LoanApi\Core\Router\Router->LoanApi\Core\Router\{closure}(Object(LoanApi\Core\Router\Route))
+#2 /home/lucian.ene/www/loan-api/core/Router/Router.php(52): array_filter(Array, Object(Closure))
+#3 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:18:20 [error] 10559#10559: *225 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Core\Http\Request::isPath(), 0 passed in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 51 and exactly 1 expected in /home/lucian.ene/www/loan-api/core/Http/Request.php:36
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(51): LoanApi\Core\Http\Request->isPath()
+#1 [internal function]: LoanApi\Core\Router\Router->LoanApi\Core\Router\{closure}(Object(LoanApi\Core\Router\Route))
+#2 /home/lucian.ene/www/loan-api/core/Router/Router.php(52): array_filter(Array, Object(Closure))
+#3 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:18:20 [error] 10559#10559: *227 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Core\Http\Request::isPath(), 0 passed in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 51 and exactly 1 expected in /home/lucian.ene/www/loan-api/core/Http/Request.php:36
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(51): LoanApi\Core\Http\Request->isPath()
+#1 [internal function]: LoanApi\Core\Router\Router->LoanApi\Core\Router\{closure}(Object(LoanApi\Core\Router\Route))
+#2 /home/lucian.ene/www/loan-api/core/Router/Router.php(52): array_filter(Array, Object(Closure))
+#3 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:18:20 [error] 10559#10559: *229 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Core\Http\Request::isPath(), 0 passed in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 51 and exactly 1 expected in /home/lucian.ene/www/loan-api/core/Http/Request.php:36
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(51): LoanApi\Core\Http\Request->isPath()
+#1 [internal function]: LoanApi\Core\Router\Router->LoanApi\Core\Router\{closure}(Object(LoanApi\Core\Router\Route))
+#2 /home/lucian.ene/www/loan-api/core/Router/Router.php(52): array_filter(Array, Object(Closure))
+#3 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:18:20 [error] 10559#10559: *231 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Core\Http\Request::isPath(), 0 passed in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 51 and exactly 1 expected in /home/lucian.ene/www/loan-api/core/Http/Request.php:36
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(51): LoanApi\Core\Http\Request->isPath()
+#1 [internal function]: LoanApi\Core\Router\Router->LoanApi\Core\Router\{closure}(Object(LoanApi\Core\Router\Route))
+#2 /home/lucian.ene/www/loan-api/core/Router/Router.php(52): array_filter(Array, Object(Closure))
+#3 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:19:48 [error] 10559#10559: *239 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '$route' (T_VARIABLE), expecting ',' or ';' in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 51" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:19:49 [error] 10559#10559: *241 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '$route' (T_VARIABLE), expecting ',' or ';' in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 51" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:19:49 [error] 10559#10559: *243 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '$route' (T_VARIABLE), expecting ',' or ';' in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 51" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:20:34 [error] 10559#10559: *245 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '$route' (T_VARIABLE), expecting ',' or ';' in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:20:35 [error] 10559#10559: *247 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '$route' (T_VARIABLE), expecting ',' or ';' in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:21:43 [error] 10559#10559: *259 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method LoanApi\Core\Http\Request::isRequestMethod() in /home/lucian.ene/www/loan-api/core/Router/Router.php:49
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 49" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:21:44 [error] 10559#10559: *261 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method LoanApi\Core\Http\Request::isRequestMethod() in /home/lucian.ene/www/loan-api/core/Router/Router.php:49
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 49" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:21:44 [error] 10559#10559: *263 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method LoanApi\Core\Http\Request::isRequestMethod() in /home/lucian.ene/www/loan-api/core/Router/Router.php:49
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 49" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:23:40 [error] 10559#10559: *273 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '$route' (T_VARIABLE), expecting ',' or ';' in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 48" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:25:22 [error] 10559#10559: *279 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: requestPath in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 51
+PHP message: PHP Fatal error:  Uncaught LoanApi\Core\Router\Exceptions\HttpRouteNotFoundException: Route  is invalid. in /home/lucian.ene/www/loan-api/core/Router/Router.php:51
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 51" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:25:49 [error] 10559#10559: *285 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: requestMethod in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 61
+PHP message: PHP Notice:  Undefined variable: requestPath in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 61
+PHP message: PHP Notice:  Undefined variable: requestQueryArgs in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 61
+PHP message: PHP Fatal error:  Uncaught TypeError: Argument 1 passed to LoanApi\Core\Http\Request::__construct() must be of the type array, null given, called in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 61 and defined in /home/lucian.ene/www/loan-api/core/Http/Request.php:14
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(61): LoanApi\Core\Http\Request->__construct(NULL, NULL, NULL)
+#1 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:32:50 [error] 10559#10559: *313 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Controllers\ApiController::__construct(), 0 passed in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 15 and exactly 1 expected in /home/lucian.ene/www/loan-api/controllers/ApiController.php:12
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/controllers/LoanController.php(15): LoanApi\Controllers\ApiController->__construct()
+#1 /home/lucian.ene/www/loan-api/core/Router/Router.php(56): LoanApi\Controllers\LoanController->__construct()
+#2 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#3 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/ApiController.php on line 12" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:32:51 [error] 10559#10559: *315 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Controllers\ApiController::__construct(), 0 passed in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 15 and exactly 1 expected in /home/lucian.ene/www/loan-api/controllers/ApiController.php:12
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/controllers/LoanController.php(15): LoanApi\Controllers\ApiController->__construct()
+#1 /home/lucian.ene/www/loan-api/core/Router/Router.php(56): LoanApi\Controllers\LoanController->__construct()
+#2 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#3 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/ApiController.php on line 12" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:32:54 [error] 10559#10559: *317 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method LoanApi\Controllers\ApiController::construct() in /home/lucian.ene/www/loan-api/controllers/LoanController.php:15
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(56): LoanApi\Controllers\LoanController->__construct()
+#1 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:33:03 [error] 10559#10559: *319 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Controllers\ApiController::__construct(), 0 passed in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 15 and exactly 1 expected in /home/lucian.ene/www/loan-api/controllers/ApiController.php:12
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/controllers/LoanController.php(15): LoanApi\Controllers\ApiController->__construct()
+#1 /home/lucian.ene/www/loan-api/core/Router/Router.php(56): LoanApi\Controllers\LoanController->__construct()
+#2 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#3 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/ApiController.php on line 12" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:33:03 [error] 10559#10559: *321 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Controllers\ApiController::__construct(), 0 passed in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 15 and exactly 1 expected in /home/lucian.ene/www/loan-api/controllers/ApiController.php:12
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/controllers/LoanController.php(15): LoanApi\Controllers\ApiController->__construct()
+#1 /home/lucian.ene/www/loan-api/core/Router/Router.php(56): LoanApi\Controllers\LoanController->__construct()
+#2 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#3 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/ApiController.php on line 12" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:33:03 [error] 10559#10559: *323 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Controllers\ApiController::__construct(), 0 passed in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 15 and exactly 1 expected in /home/lucian.ene/www/loan-api/controllers/ApiController.php:12
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/controllers/LoanController.php(15): LoanApi\Controllers\ApiController->__construct()
+#1 /home/lucian.ene/www/loan-api/core/Router/Router.php(56): LoanApi\Controllers\LoanController->__construct()
+#2 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#3 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/ApiController.php on line 12" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:33:13 [error] 10559#10559: *325 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Controllers\LoanController::__construct(), 0 passed in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 56 and exactly 1 expected in /home/lucian.ene/www/loan-api/controllers/LoanController.php:13
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/core/Router/Router.php(56): LoanApi\Controllers\LoanController->__construct()
+#1 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 13" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:33:18 [error] 10559#10559: *327 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Controllers\ApiController::__construct(), 0 passed in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 15 and exactly 1 expected in /home/lucian.ene/www/loan-api/controllers/ApiController.php:12
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/controllers/LoanController.php(15): LoanApi\Controllers\ApiController->__construct()
+#1 /home/lucian.ene/www/loan-api/core/Router/Router.php(56): LoanApi\Controllers\LoanController->__construct()
+#2 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#3 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/ApiController.php on line 12" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:33:23 [error] 10559#10559: *329 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Controllers\ApiController::__construct(), 0 passed in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 15 and exactly 1 expected in /home/lucian.ene/www/loan-api/controllers/ApiController.php:12
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/controllers/LoanController.php(15): LoanApi\Controllers\ApiController->__construct()
+#1 /home/lucian.ene/www/loan-api/core/Router/Router.php(56): LoanApi\Controllers\LoanController->__construct()
+#2 /home/lucian.ene/www/loan-api/index.php(23): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#3 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/ApiController.php on line 12" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 13:35:47 [error] 10559#10559: *341 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: request in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:00:54 [error] 10559#10559: *347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use LoanApi\Core\DependencyInjection\Container as Container because the name is already in use in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:01:02 [error] 10559#10559: *349 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use LoanApi\Core\DependencyInjection\Container as Container because the name is already in use in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:01:03 [error] 10559#10559: *351 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use LoanApi\Core\DependencyInjection\Container as Container because the name is already in use in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:01:03 [error] 10559#10559: *353 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use LoanApi\Core\DependencyInjection\Container as Container because the name is already in use in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:01:05 [error] 10559#10559: *355 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use LoanApi\Core\DependencyInjection\Container as Container because the name is already in use in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:01:05 [error] 10559#10559: *357 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use LoanApi\Core\DependencyInjection\Container as Container because the name is already in use in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:01:53 [error] 10559#10559: *359 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use LoanApi\Core\DependencyInjection\Container as Container because the name is already in use in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:01:53 [error] 10559#10559: *361 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use LoanApi\Core\DependencyInjection\Container as Container because the name is already in use in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:01:53 [error] 10559#10559: *363 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use LoanApi\Core\DependencyInjection\Container as Container because the name is already in use in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:02:02 [error] 10559#10559: *365 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use LoanApi\Core\DependencyInjection\Container as Container because the name is already in use in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:02:03 [error] 10559#10559: *367 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use LoanApi\Core\DependencyInjection\Container as Container because the name is already in use in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:02:03 [error] 10559#10559: *369 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use LoanApi\Core\DependencyInjection\Container as Container because the name is already in use in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:02:03 [error] 10559#10559: *371 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use LoanApi\Core\DependencyInjection\Container as Container because the name is already in use in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:02:09 [error] 10559#10559: *373 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use LoanApi\Core\DependencyInjection\Container as Container because the name is already in use in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:02:09 [error] 10559#10559: *375 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use LoanApi\Core\DependencyInjection\Container as Container because the name is already in use in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:02:10 [error] 10559#10559: *377 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use LoanApi\Core\DependencyInjection\Container as Container because the name is already in use in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:06:20 [error] 10559#10559: *389 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught TypeError: Argument 1 passed to LoanApi\Core\Router\Router::dispatch() must be an instance of LoanApi\Core\Http\Request, null given, called in /home/lucian.ene/www/loan-api/index.php on line 22 and defined in /home/lucian.ene/www/loan-api/core/Router/Router.php:44
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/index.php(22): LoanApi\Core\Router\Router->dispatch(NULL)
+#1 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 44" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:12:20 [error] 10559#10559: *399 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: request in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 22
+PHP message: PHP Fatal error:  Uncaught Error: Call to a member function getArg() on null in /home/lucian.ene/www/loan-api/controllers/LoanController.php:22
+Stack trace:
+#0 [internal function]: LoanApi\Controllers\LoanController->index(Object(LoanApi\Core\Http\Request))
+#1 /home/lucian.ene/www/loan-api/core/Router/Router.php(61): call_user_func_array(Array, Array)
+#2 /home/lucian.ene/www/loan-api/index.php(22): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#3 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:12:31 [error] 10559#10559: *403 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: request in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 22
+PHP message: PHP Fatal error:  Uncaught Error: Call to a member function getArg() on null in /home/lucian.ene/www/loan-api/controllers/LoanController.php:22
+Stack trace:
+#0 [internal function]: LoanApi\Controllers\LoanController->index(Object(LoanApi\Core\Http\Request))
+#1 /home/lucian.ene/www/loan-api/core/Router/Router.php(61): call_user_func_array(Array, Array)
+#2 /home/lucian.ene/www/loan-api/index.php(22): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#3 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:12:44 [error] 10559#10559: *407 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: LoanApi\Core\Http\Request::$getArgs in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 26
+PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\Http\ArgumentNotFoundException' not found in /home/lucian.ene/www/loan-api/core/Http/Request.php:30
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/controllers/LoanController.php(22): LoanApi\Core\Http\Request->getArg('data')
+#1 [internal function]: LoanApi\Controllers\LoanController->index(Object(LoanApi\Core\Http\Request))
+#2 /home/lucian.ene/www/loan-api/core/Router/Router.php(61): call_user_func_array(Array, Array)
+#3 /home/lucian.ene/www/loan-api/index.php(22): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 30" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:12:49 [error] 10559#10559: *409 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: LoanApi\Core\Http\Request::$getArgs in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 26
+PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\Http\ArgumentNotFoundException' not found in /home/lucian.ene/www/loan-api/core/Http/Request.php:30
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/controllers/LoanController.php(22): LoanApi\Core\Http\Request->getArg('limit')
+#1 [internal function]: LoanApi\Controllers\LoanController->index(Object(LoanApi\Core\Http\Request))
+#2 /home/lucian.ene/www/loan-api/core/Router/Router.php(61): call_user_func_array(Array, Array)
+#3 /home/lucian.ene/www/loan-api/index.php(22): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 30" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:12:49 [error] 10559#10559: *411 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: LoanApi\Core\Http\Request::$getArgs in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 26
+PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\Http\ArgumentNotFoundException' not found in /home/lucian.ene/www/loan-api/core/Http/Request.php:30
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/controllers/LoanController.php(22): LoanApi\Core\Http\Request->getArg('limit')
+#1 [internal function]: LoanApi\Controllers\LoanController->index(Object(LoanApi\Core\Http\Request))
+#2 /home/lucian.ene/www/loan-api/core/Router/Router.php(61): call_user_func_array(Array, Array)
+#3 /home/lucian.ene/www/loan-api/index.php(22): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 30" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:14:05 [error] 10559#10559: *415 FastCGI sent in stderr: "PHP message: PHP Warning:  array_key_exists() expects parameter 2 to be array, string given in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 26
+PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\Http\ArgumentNotFoundException' not found in /home/lucian.ene/www/loan-api/core/Http/Request.php:30
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/controllers/LoanController.php(22): LoanApi\Core\Http\Request->getArg('limit')
+#1 [internal function]: LoanApi\Controllers\LoanController->index(Object(LoanApi\Core\Http\Request))
+#2 /home/lucian.ene/www/loan-api/core/Router/Router.php(61): call_user_func_array(Array, Array)
+#3 /home/lucian.ene/www/loan-api/index.php(22): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 30" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:14:08 [error] 10559#10559: *417 FastCGI sent in stderr: "PHP message: PHP Warning:  array_key_exists() expects parameter 2 to be array, string given in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 26
+PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\Http\ArgumentNotFoundException' not found in /home/lucian.ene/www/loan-api/core/Http/Request.php:30
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/controllers/LoanController.php(22): LoanApi\Core\Http\Request->getArg('data')
+#1 [internal function]: LoanApi\Controllers\LoanController->index(Object(LoanApi\Core\Http\Request))
+#2 /home/lucian.ene/www/loan-api/core/Router/Router.php(61): call_user_func_array(Array, Array)
+#3 /home/lucian.ene/www/loan-api/index.php(22): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 30" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:14:31 [error] 10559#10559: *423 FastCGI sent in stderr: "PHP message: PHP Warning:  array_key_exists() expects parameter 2 to be array, string given in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 26
+PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\Http\ArgumentNotFoundException' not found in /home/lucian.ene/www/loan-api/core/Http/Request.php:30
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/controllers/LoanController.php(22): LoanApi\Core\Http\Request->getArg('page')
+#1 [internal function]: LoanApi\Controllers\LoanController->index(Object(LoanApi\Core\Http\Request))
+#2 /home/lucian.ene/www/loan-api/core/Router/Router.php(61): call_user_func_array(Array, Array)
+#3 /home/lucian.ene/www/loan-api/index.php(22): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 30" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:15:33 [error] 10559#10559: *425 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: LoanApi\Core\Http\Request::$getArgs in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 27" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:17:09 [error] 10559#10559: *437 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\Http\ArgumentNotFoundException' not found in /home/lucian.ene/www/loan-api/core/Http/Request.php:31
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/controllers/LoanController.php(22): LoanApi\Core\Http\Request->getArg('lismit')
+#1 [internal function]: LoanApi\Controllers\LoanController->index(Object(LoanApi\Core\Http\Request))
+#2 /home/lucian.ene/www/loan-api/core/Router/Router.php(61): call_user_func_array(Array, Array)
+#3 /home/lucian.ene/www/loan-api/index.php(22): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/Http/Request.php on line 31" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:46:13 [error] 10559#10559: *497 FastCGI sent in stderr: "PHP message: PHP Warning:  Invalid argument supplied for foreach() in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 63" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/29 16:54:40 [error] 10559#10559: *533 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: LoanApi\Controllers\LoanController::$loanRepository in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 18
+PHP message: PHP Fatal error:  Uncaught Error: Call to a member function all() on null in /home/lucian.ene/www/loan-api/controllers/LoanController.php:18
+Stack trace:
+#0 [internal function]: LoanApi\Controllers\LoanController->index(Object(LoanApi\Core\Http\Request), Object(LoanApi\Repositories\LoanRepository))
+#1 /home/lucian.ene/www/loan-api/core/Router/Router.php(70): call_user_func_array(Array, Array)
+#2 /home/lucian.ene/www/loan-api/index.php(27): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#3 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:15:32 [error] 1206#1206: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:15:42 [error] 1206#1206: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:15:50 [error] 1206#1206: *9 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: router in /home/lucian.ene/www/loan-api/bootstrap.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:15:50 [error] 1206#1206: *11 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: router in /home/lucian.ene/www/loan-api/bootstrap.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:15:50 [error] 1206#1206: *13 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: router in /home/lucian.ene/www/loan-api/bootstrap.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:15:50 [error] 1206#1206: *15 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: router in /home/lucian.ene/www/loan-api/bootstrap.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:16:14 [error] 1206#1206: *19 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: router in /home/lucian.ene/www/loan-api/bootstrap.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:16:31 [error] 1206#1206: *21 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:16:31 [error] 1206#1206: *23 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:17:12 [error] 1206#1206: *25 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:17:13 [error] 1206#1206: *27 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:17:18 [error] 1206#1206: *29 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:17:18 [error] 1206#1206: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:17:19 [error] 1206#1206: *33 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:17:19 [error] 1206#1206: *35 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:18:57 [error] 1206#1206: *39 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:19:04 [error] 1206#1206: *41 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:19:04 [error] 1206#1206: *43 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:19:05 [error] 1206#1206: *45 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:19:05 [error] 1206#1206: *47 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:19:20 [error] 1206#1206: *49 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:19:44 [error] 1206#1206: *51 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:19:53 [error] 1206#1206: *53 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:19:53 [error] 1206#1206: *55 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:19:53 [error] 1206#1206: *57 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'LoanApi\Core\DependencyInjection\Exceptions\ServiceNotLocatable' not found in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php:65
+Stack trace:
+#0 /home/lucian.ene/www/loan-api/bootstrap.php(22): LoanApi\Core\DependencyInjection\Container->get('router')
+#1 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#2 {main}
+  thrown in /home/lucian.ene/www/loan-api/core/DependencyInjection/Container.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:20:06 [error] 1206#1206: *59 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: router in /home/lucian.ene/www/loan-api/bootstrap.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:20:06 [error] 1206#1206: *61 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: router in /home/lucian.ene/www/loan-api/bootstrap.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:20:06 [error] 1206#1206: *63 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: router in /home/lucian.ene/www/loan-api/bootstrap.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:25:12 [error] 1206#1206: *75 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Controllers\LoanController::index(), 0 passed and exactly 2 expected in /home/lucian.ene/www/loan-api/controllers/LoanController.php:10
+Stack trace:
+#0 [internal function]: LoanApi\Controllers\LoanController->index()
+#1 /home/lucian.ene/www/loan-api/core/Router/Router.php(66): call_user_func_array(Array, Array)
+#2 /home/lucian.ene/www/loan-api/bootstrap.php(27): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#3 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:25:12 [error] 1206#1206: *77 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Controllers\LoanController::index(), 0 passed and exactly 2 expected in /home/lucian.ene/www/loan-api/controllers/LoanController.php:10
+Stack trace:
+#0 [internal function]: LoanApi\Controllers\LoanController->index()
+#1 /home/lucian.ene/www/loan-api/core/Router/Router.php(66): call_user_func_array(Array, Array)
+#2 /home/lucian.ene/www/loan-api/bootstrap.php(27): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#3 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:25:13 [error] 1206#1206: *79 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Controllers\LoanController::index(), 0 passed and exactly 2 expected in /home/lucian.ene/www/loan-api/controllers/LoanController.php:10
+Stack trace:
+#0 [internal function]: LoanApi\Controllers\LoanController->index()
+#1 /home/lucian.ene/www/loan-api/core/Router/Router.php(66): call_user_func_array(Array, Array)
+#2 /home/lucian.ene/www/loan-api/bootstrap.php(27): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#3 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:25:13 [error] 1206#1206: *81 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Controllers\LoanController::index(), 0 passed and exactly 2 expected in /home/lucian.ene/www/loan-api/controllers/LoanController.php:10
+Stack trace:
+#0 [internal function]: LoanApi\Controllers\LoanController->index()
+#1 /home/lucian.ene/www/loan-api/core/Router/Router.php(66): call_user_func_array(Array, Array)
+#2 /home/lucian.ene/www/loan-api/bootstrap.php(27): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#3 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:28:09 [error] 1206#1206: *109 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: a in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 62" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:28:09 [error] 1206#1206: *111 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: a in /home/lucian.ene/www/loan-api/core/Router/Router.php on line 62" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:33:06 [error] 1206#1206: *117 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Controllers\LoanController::index(), 0 passed and exactly 2 expected in /home/lucian.ene/www/loan-api/controllers/LoanController.php:10
+Stack trace:
+#0 [internal function]: LoanApi\Controllers\LoanController->index()
+#1 /home/lucian.ene/www/loan-api/core/Router/Router.php(68): call_user_func_array(Array, Array)
+#2 /home/lucian.ene/www/loan-api/bootstrap.php(27): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#3 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "GET /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
+2018/05/30 04:33:11 [error] 1206#1206: *119 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function LoanApi\Controllers\LoanController::update(), 0 passed and exactly 1 expected in /home/lucian.ene/www/loan-api/controllers/LoanController.php:35
+Stack trace:
+#0 [internal function]: LoanApi\Controllers\LoanController->update()
+#1 /home/lucian.ene/www/loan-api/core/Router/Router.php(68): call_user_func_array(Array, Array)
+#2 /home/lucian.ene/www/loan-api/bootstrap.php(27): LoanApi\Core\Router\Router->dispatch(Object(LoanApi\Core\Http\Request))
+#3 /home/lucian.ene/www/loan-api/index.php(3): require_once('/home/lucian.en...')
+#4 {main}
+  thrown in /home/lucian.ene/www/loan-api/controllers/LoanController.php on line 35" while reading response header from upstream, client: 127.0.0.1, server: loan-api.local, request: "POST /api/v1/loans?page=1&limit=30 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm.sock:", host: "loan-api.local"
