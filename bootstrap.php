@@ -18,10 +18,8 @@ $loader->make();
 $container = new LoanApi\Core\DependencyInjection\Container(__CONFIG_DIR__ . '/services.php');
 $request = $container->get('request')->handle($_SERVER);
 
-// die(var_dump($container));
-
 // register a router and dispatch
-$router = $container->get('router');
+$router = $container->get('router')->handle($container);
 $router->dispatch($request);
 
 // die(var_dump($_SERVER['REQUEST_METHOD']));

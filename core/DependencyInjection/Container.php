@@ -2,6 +2,7 @@
 
 namespace LoanApi\Core\DependencyInjection;
 
+use LoanApi\Core\DependencyInjection\Contracts\Locatable;
 use LoanApi\Core\DependencyInjection\Exceptions;
 
 class Container
@@ -69,7 +70,7 @@ class Container
 
         $service = new $this->registry[$key];
 
-        if (!($service instanceof LocatableService)) {
+        if (!($service instanceof Locatable)) {
             throw new Exceptions\ServiceNotLocatable();
         }
 

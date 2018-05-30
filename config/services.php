@@ -1,4 +1,5 @@
 <?php
+
 return [
     'request' => LoanApi\Core\Http\Request::class,
     'router' => LoanApi\Core\Router\Router::class,

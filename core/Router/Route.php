@@ -2,43 +2,97 @@
 
 namespace LoanApi\Core\Router;
 
-class Route
+use LoanApi\Core\DependencyInjection\ContainerTrait;
+use LoanApi\Core\DependencyInjection\Contracts\Locatable;
+use LoanApi\Core\Router\Router;
+
+class Route implements Locatable
 {
-    private $requestMethod;
-    private $path;
-    private $controller;
-    private $controllerMethod;
+    use ContainerTrait;
 
-    public function __construct($requestMethod, $path, $controller, $controllerMethod)
+    public $methods = [];
+    public $uri;
+    public $action;
+
+    protected $router;
+
+    public function __construct(array $methods, $uri, $action)
     {
-        $this->requestMethod = $requestMethod;
-        $this->path = $path;
-        $this->controller = $controller;
-        $this->controllerMethod = $controllerMethod;
+        $this->methods = $methods;
+        $this->uri = $uri;
+        $this->action = $action;
     }
 
-    public function getRequestMethod()
+    public function setRouter(Router $router)
     {
-        return $this->requestMethod;
+        $this->router = $router;
+        return $this;
     }
 
-    public function getPath()
+    public function getRouter()
     {
-        return $this->path;
+        return $this->router;
+    }
+
+    public function getMethods()
+    {
+        return $this->methods;
+    }
+
+    public function hasMethod($method)
+    {
+        return in_array($method, $this->methods);
+    }
+
+    public function getUri()
+    {
+        return $this->uri;
+    }
+
+    public function getAction()
+    {
+        return $this->action;
+    }
+
+    public function getControllerActionString()
+    {
+        return $this->controller . '@' . $this->action;
+    }
+
+    public function isControllerAction()
+    {
+        return is_string($this->action);
     }
 
     public function getController()
     {
-        return $this->controller;
+        $controller = explode('@', $this->action)[0];
+        return new $controller;
     }
 
     public function getControllerMethod()
     {
-        return $this->controllerMethod;
+        return explode('@', $this->action)[1];
     }
 
-    public function getControllerAndMethod()
+    public function runController()
     {
-        return $this->controller . '@' . $this->controllerMethod;
+        $this->getController()
+            ->setContainer($this->container)
+            ->callAction($this->getControllerMethod(), []);
+    }
+
+    public function runCallable()
+    {
+        call_user_func($this->getAction());
+    }
+
+    public function run()
+    {
+        if($this->isControllerAction()) {
+            $this->runController();
+        } else {
+            $this->runCallable();
+        }
     }
 }

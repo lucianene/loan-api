@@ -2,21 +2,19 @@
 
 namespace LoanApi\Repositories;
 
+use LoanApi\Core\DependencyInjection\ContainerTrait;
+use LoanApi\Core\DependencyInjection\Contracts\Locatable;
+
 // query stuff for the controllers
-class LoanRepository
+class LoanRepository implements Locatable
 {
-    public function __construct()
-    {
-        // echo get_class($this) . ' Loaded';
-    }
+    use ContainerTrait;
 
     public function all()
     {
         return [
-            'data' => [
-                'loan1' => 'a',
-                'loan2' => 'b',
-            ]
+            'loan1' => 'a',
+            'loan2' => 'b'
         ];
     }
 }

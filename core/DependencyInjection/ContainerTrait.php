@@ -4,15 +4,16 @@ namespace LoanApi\Core\DependencyInjection;
 
 use LoanApi\Core\DependencyInjection\Container;
 
-abstract class LocatableService
+trait ContainerTrait
 {
-    private $_container = null;
+    protected $container = null;
 
     public function setContainer(Container $container) {
-        $this->_container = $container;
+        $this->container = $container;
+        return $this;
     }
 
     public function getContainer() {
-        return $this->_container;
+        return $this->container;
     }
 }

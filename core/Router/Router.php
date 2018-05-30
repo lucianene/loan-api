@@ -2,30 +2,39 @@
 
 namespace LoanApi\Core\Router;
 
-use LoanApi\Core\DependencyInjection\LocatableService;
+use LoanApi\Core\DependencyInjection\Container;
+use LoanApi\Core\DependencyInjection\ContainerTrait;
+use LoanApi\Core\DependencyInjection\Contracts\Locatable;
 use LoanApi\Core\Http\Request;
 use LoanApi\Core\Router\Exceptions;
 
-class Router extends LocatableService
+class Router implements Locatable
 {
-    use RouterRequestMethodsTrait;
+    use ContainerTrait, RouterRequestMethodsTrait;
 
     private $routes = [];
-    private $prefix;
+    private $prefix = '';
 
-    public function __construct()
+    public function handle(Container $container)
+    {
+        $this->container = $container;
+        $this->_loadRoutes();
+
+        return $this;
+    }
+
+    private function _loadRoutes()
     {
         $routesFile = __ROUTES_DIR__ . '/api.php';
         if(!file_exists($routesFile)) {
             throw new Exception("File $routesFile not found.");
         }
         require_once $routesFile;
-
-        return $this;
     }
 
+
     /**
-     * Set router path prefix
+     * Set router uri prefix
      * @param string $prefix
      */
     public function setPrefix(string $prefix)
@@ -33,9 +42,35 @@ class Router extends LocatableService
         $this->prefix = $prefix;
     }
 
-    public function addRoute(string $requestMethod, string $path, string $controller, string $controllerMethod)
+    /**
+     * Add route to the collection
+     * @param array $methods
+     * @param string $uri
+     * @param mixed $action
+     * @return void
+     */
+    protected function addRoute($methods, $uri, $action)
     {
-        $this->routes[] = new Route($requestMethod, $path, $controller, $controllerMethod);
+        $this->routes[] = $this->createRoute($methods, $uri, $action);
+    }
+
+    /**
+     * Create route instance
+     *
+     * @param  array $methods
+     * @param  array $uri
+     * @param  mixed $action
+     * @return Route
+     */
+    private function createRoute($methods, $uri, $action)
+    {
+        if(!is_callable($action) && !is_string($action) || !is_callable($action) && strpos($action, '@') === false) {
+            throw new Exceptions\InvalidRouteFormatException;
+        }
+
+        return (new Route($methods, $this->prefix . $uri, $action))
+                ->setContainer($this->container)
+                ->setRouter($this);
     }
 
     public function getRoutes()
@@ -43,27 +78,28 @@ class Router extends LocatableService
         return $this->routes;
     }
 
-    // mach uri and load coresponding controller method
-    // TODO: mach route with args
-    public function dispatch(Request $request)
+    private function _matchRoute(Request $request)
     {
-        // if route found
-        $route = array_filter($this->routes, function($route) use(&$request) {
-            return $request->isPath($route->getPath()) && $request->isMethod($route->getRequestMethod());
+        // check if route uri&method match
+        $route = array_filter($this->routes, function ($route) use ($request) {
+            if ($request->isUri($route->getUri()) && $route->hasMethod($request->getMethod())) {
+                return $route;
+            }
         });
 
-        if(!$route) {
-            throw new Exceptions\HttpRouteNotFoundException('Route ' . $requestPath . ' is invalid.');
+        // check if there is a match
+        if (!$route) {
+            throw new Exceptions\HttpRouteNotFoundException('Route ' . $request->getUri() . ' is invalid.');
         }
 
-        $route = array_pop($route);
-        $controller = $route->getController();
-        $controller = new $controller;
-        // die(var_dump($controller));
+        // remove the parent array and return the route
+        return array_pop($route);
+    }
 
-        // TODO: parse wildcard parameters
-        // inject some dependencies (instead of request, add auto from the config/container.php)
-        $dependencies = [];
-        call_user_func_array([$controller, $route->getControllerMethod()], $dependencies);
+
+    public function dispatch(Request $request)
+    {
+        $route = $this->_matchRoute($request);
+        $route->run();
     }
 }

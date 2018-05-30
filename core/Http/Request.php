@@ -2,12 +2,15 @@
 
 namespace LoanApi\Core\Http;
 
-use LoanApi\Core\DependencyInjection\LocatableService;
+use LoanApi\Core\DependencyInjection\ContainerTrait;
+use LoanApi\Core\DependencyInjection\Contracts\Locatable;
 
-class Request extends LocatableService
+class Request implements Locatable
 {
-    public $fullPath;
-    public $path;
+    use ContainerTrait;
+
+    public $fullUri;
+    public $uri;
     public $method;
     public $host;
     public $scheme;
@@ -15,8 +18,8 @@ class Request extends LocatableService
 
     public function handle(array $server)
     {
-        $this->fullPath = $server['REQUEST_URI'];
-        $this->path = parse_url($server['REQUEST_URI'], PHP_URL_PATH);
+        $this->fullUri = $server['REQUEST_URI'];
+        $this->uri = trim(parse_url($server['REQUEST_URI'], PHP_URL_PATH), '/');
         $this->method = $server['REQUEST_METHOD'];
         $this->host = $server['HTTP_HOST'];
         $this->scheme = $server['REQUEST_SCHEME'];
@@ -32,7 +35,7 @@ class Request extends LocatableService
             return $this->getArgs()[$argument];
         }
 
-        throw new ArgumentNotFoundException('Argument ' . $argument . ' does not exist.');
+        throw new InvalidArgumentException('Argument ' . $argument . ' does not exist.');
     }
 
     public function getArgs()
@@ -41,19 +44,19 @@ class Request extends LocatableService
     }
 
 
-    public function getFullPath()
+    public function getFullUri()
     {
-        return $this->fullPath;
+        return $this->fullUri;
     }
 
-    public function getPath()
+    public function getUri()
     {
-        return $this->path;
+        return $this->uri;
     }
 
-    public function isPath($path)
+    public function isUri($uri)
     {
-        return trim($this->path, '/') === trim($path, '/');
+        return trim($this->uri, '/') === trim($uri, '/');
     }
 
     public function getQuery()
@@ -83,12 +86,12 @@ class Request extends LocatableService
 
     public function url()
     {
-        return $this->scheme . '/' . $this->host . '/' . $this->path;
+        return $this->scheme . '/' . $this->host . '/' . $this->uri;
     }
 
     // with query string
     public function fullUrl()
     {
-        return $this->scheme . '/' . $this->host . '/' . $this->path . $this->query;
+        return $this->scheme . '/' . $this->host . '/' . $this->uri . $this->query;
     }
 }

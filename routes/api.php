@@ -3,6 +3,10 @@
 // register router prefix
 $this->setPrefix('api/v1');
 
+$this->get('/test', function() {
+    echo 'this is the test route';
+});
+
 // regsiter get route
 $this->get('/loans', 'LoanApi\\Controllers\\LoanController@index');
 
@@ -14,8 +18,3 @@ $this->post('/loans', 'LoanApi\\Controllers\\LoanController@update');
 
 // register post route
 $this->put('/loans', 'LoanApi\\Controllers\\LoanController@store');
-
-// CREATE post
-// READ get
-// UPDATE put/patch
-// DELETE delete

@@ -6,49 +6,33 @@ use LoanApi\Core\Router\Exceptions;
 
 trait RouterRequestMethodsTrait
 {
-    public function get($route, $controllerAndMethod)
+    public function get($uri, $action)
     {
-        $this->register('GET', $route, $controllerAndMethod);
+        $this->addRoute(['GET'], $uri, $action);
     }
 
-    public function post($route, $controllerAndMethod)
+    public function post($uri, $action)
     {
-        $this->register('POST', $route, $controllerAndMethod);
+        $this->addRoute(['POST'], $uri, $action);
     }
 
-    public function put($route, $controllerAndMethod)
+    public function put($uri, $action)
     {
-        $this->register('PUT', $route, $controllerAndMethod);
+        $this->addRoute(['PUT'], $uri, $action);
     }
 
-    public function patch($route, $controllerAndMethod)
+    public function patch($uri, $action)
     {
-        $this->register('PATCH', $route, $controllerAndMethod);
+        $this->addRoute(['PATCH'], $uri, $action);
     }
 
-    public function delete($route, $controllerAndMethod)
+    public function delete($uri, $action)
     {
-        $this->register('DELETE', $route, $controllerAndMethod);
+        $this->addRoute(['DELETE'], $uri, $action);
     }
 
-    public function options($route, $controllerAndMethod)
+    public function options($uri, $action)
     {
-        $this->register('OPTIONS', $route, $controllerAndMethod);
-    }
-
-    private function register($requestMethod, $route, $controllerAndMethod)
-    {
-        $controllerAndMethod = explode('@', $controllerAndMethod);
-
-        if(count($controllerAndMethod) < 2) {
-            throw new Exceptions\InvalidRouteFormatException;
-        }
-
-        $path = trim($route, '/');
-        if($this->prefix) {
-            $path = trim($this->prefix . '/' . $path, '/');
-        }
-
-        $this->addRoute($requestMethod, $path, $controllerAndMethod[0], $controllerAndMethod[1]);
+        $this->addRoute(['OPTIONS'], $uri, $action);
     }
 }

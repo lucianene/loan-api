@@ -3,23 +3,19 @@
 namespace LoanApi\Controllers;
 
 use LoanApi\Core\Http\Request;
+use LoanApi\Core\Http\Response;
+use LoanApi\Core\Router\Controller as BaseController;
 use LoanApi\Repositories\LoanRepository;
 
-class LoanController extends ApiController
+class LoanController extends BaseController
 {
     public function index()
     {
-        // $loanRepository = $this->container->get('repositories.loan');
-        // die(var_dump($this->request));
-        // die(var_dump($this->request->getArgs()));
-        // die(var_dump($this->request->getArg('limit')));
+        $loanRepository = $this->container->get('repositories.loan');
+        $request = $this->container->get('request');
+        $data = $loanRepository->all();
 
-        // $data = $this->loanRepository->limit($request->getArg('limit'))->get();
-
-        return $this->jsonResponse([
-            'data' => ['test']
-            // 'data' => $loanRepository->all()
-        ]);
+        return (new Response($data, 404))->jsonResponse();
     }
 
     public function create() {}
@@ -34,9 +30,8 @@ class LoanController extends ApiController
 
     public function edit() {}
 
-    public function update(Request $request)
+    public function update()
     {
-        die(var_dump($request));
         echo 'post method executed' . PHP_EOL;
     }
 
