@@ -4,6 +4,7 @@ namespace LoanApi\Core\DependencyInjection;
 
 use LoanApi\Core\DependencyInjection\Contracts\Locatable;
 use LoanApi\Core\DependencyInjection\Exceptions;
+use ReflectionClass;
 
 class Container
 {
@@ -13,14 +14,15 @@ class Container
      */
     protected $registry = [];
     protected $instances = [];
+    protected $servicesConfigFile = [];
 
-    public function __construct($file)
+    public function __construct($servicesConfig)
     {
-        if(!file_exists($file)) {
-            throw new Exception("File $file not found.");
+        if(!file_exists($servicesConfig)) {
+            throw new Exception("File $servicesConfig not found.");
         }
-        $services = include_once($file);
-        foreach ($services as $key => $class) {
+        $this->servicesConfigFile = require_once($servicesConfig);
+        foreach ($this->servicesConfigFile as $key => $class) {
             $this->register($key, $class);
         }
     }
@@ -64,21 +66,51 @@ class Container
             throw new Exceptions\DependencyNotFoundException("No {$key} is bound in the container.");
         }
 
+        // if the service already resolved return the instance
         if (!$newInstance && array_key_exists($key, $this->instances)) {
             return $this->instances[$key];
         }
 
-        $service = new $this->registry[$key];
+        // reflect controller dependencies and get the instance
+        $service = $this->reflectControllerDependencies($this->registry[$key]);
 
-        if (!($service instanceof Locatable)) {
-            throw new Exceptions\ServiceNotLocatable();
+        // ensure that the service has the Locatable contract
+        if (!$service instanceof Locatable) {
+            throw new Exceptions\ServiceNotLocatable('Please implement the Locatable interface on the service.');
         }
 
+        // attach the container to the service
         $service->setContainer($this);
 
-        if (!$newInstance) {
-            $this->instances[$key] = $service;
+        // add the service into the instances bag and return
+        return $this->instances[$key] = $service;
+    }
+
+    /**
+     * @param  string $classString
+     * @return Locatable
+     */
+    public function reflectControllerDependencies($classString)
+    {
+        $reflectionClass = new ReflectionClass($classString);
+
+        // check if the constructor exist
+        if(!$classConstructor = $reflectionClass->getConstructor()) {
+            return new $classString;
         }
-        return $service;
+
+        // collect instance variables for the constructor
+        $parameters = [];
+        foreach($classConstructor->getParameters() as $classParameter)
+        {
+            if($serviceKey = array_search(
+                $classParameter->getClass()->getName(), $this->servicesConfigFile
+            )) {
+                $parameters[] = $this->get($serviceKey);
+            }
+        }
+
+        // create the instance
+        return new $classString(...$parameters);
     }
 }

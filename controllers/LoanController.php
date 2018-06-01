@@ -2,20 +2,24 @@
 
 namespace LoanApi\Controllers;
 
-use LoanApi\Core\Http\Request;
 use LoanApi\Core\Http\Response;
 use LoanApi\Core\Router\Controller as BaseController;
 use LoanApi\Repositories\LoanRepository;
 
 class LoanController extends BaseController
 {
+    private $loanRepository;
+
+    public function __construct(LoanRepository $loanRepository)
+    {
+        $this->loanRepository = $loanRepository;
+    }
+
     public function index()
     {
-        $loanRepository = $this->container->get('repositories.loan');
-        $request = $this->container->get('request');
-        $data = $loanRepository->all();
+        $data = $this->loanRepository->all();
 
-        return (new Response($data, 404))->jsonResponse();
+        return (new Response($data, 200))->jsonResponse();
     }
 
     public function create() {}
@@ -32,8 +36,19 @@ class LoanController extends BaseController
 
     public function update()
     {
-        echo 'post method executed' . PHP_EOL;
+        $loan = $this->loanRepository->getLoan(1);
+        $amortization = $this->container->get('amortization', true);
+        $amortization->handle($loan['amount'], $loan['interest_rate'], $loan['months']);
+
+        die(var_dump($amortization));
+
+        return (new Response($amortizationData, 200))->jsonResponse();
     }
 
     public function destroy() {}
+
+    public function migrate()
+    {
+        $queryString = 'create table loans(id int not null auto_increment, amount float, interest_rate float, months smallint, date date, primary key(id));';
+    }
 }

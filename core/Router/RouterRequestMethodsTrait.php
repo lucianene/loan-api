@@ -35,4 +35,9 @@ trait RouterRequestMethodsTrait
     {
         $this->addRoute(['OPTIONS'], $uri, $action);
     }
+
+    public function any($uri, $action)
+    {
+        $this->addRoute(['GET','POST','PUT','PATCH','DELETE','OPTIONS'], $uri, $action);
+    }
 }

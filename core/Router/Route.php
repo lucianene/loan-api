@@ -5,6 +5,7 @@ namespace LoanApi\Core\Router;
 use LoanApi\Core\DependencyInjection\ContainerTrait;
 use LoanApi\Core\DependencyInjection\Contracts\Locatable;
 use LoanApi\Core\Router\Router;
+use ReflectionClass;
 
 class Route implements Locatable
 {
@@ -54,20 +55,14 @@ class Route implements Locatable
         return $this->action;
     }
 
-    public function getControllerActionString()
-    {
-        return $this->controller . '@' . $this->action;
-    }
-
     public function isControllerAction()
     {
         return is_string($this->action);
     }
 
-    public function getController()
+    public function getControllerClassString()
     {
-        $controller = explode('@', $this->action)[0];
-        return new $controller;
+        return explode('@', $this->action)[0];
     }
 
     public function getControllerMethod()
@@ -77,9 +72,9 @@ class Route implements Locatable
 
     public function runController()
     {
-        $this->getController()
-            ->setContainer($this->container)
-            ->callAction($this->getControllerMethod(), []);
+        $classString = $this->getControllerClassString();
+        $controllerInstance = $this->container->reflectControllerDependencies($classString);
+        $controllerInstance->setContainer($this->container)->{$this->getControllerMethod()}();
     }
 
     public function runCallable()
