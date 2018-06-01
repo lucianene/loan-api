@@ -1,3 +1,0 @@
-the request service lives in the DI Container
-the router depends on the request service
-the repository shall be passed to a service and not to the controller
