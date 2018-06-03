@@ -50,6 +50,12 @@ class Route implements Locatable
         return $this->uri;
     }
 
+    public function getUriWildcards()
+    {
+        preg_match("{([^\}]*)}", $this->uri, $matches,PREG_OFFSET_CAPTURE);
+        die(var_dump($matches));
+    }
+
     public function getAction()
     {
         return $this->action;

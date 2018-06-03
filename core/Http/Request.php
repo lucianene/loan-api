@@ -16,17 +16,15 @@ class Request implements Locatable
     public $scheme;
     public $query;
 
-    public function handle(array $server)
+    public function __construct()
     {
-        $this->fullUri = $server['REQUEST_URI'];
-        $this->uri = trim(parse_url($server['REQUEST_URI'], PHP_URL_PATH), '/');
-        $this->method = $server['REQUEST_METHOD'];
-        $this->host = $server['HTTP_HOST'];
-        $this->scheme = $server['REQUEST_SCHEME'];
-        $this->query = $server['QUERY_STRING'];
-        $this->args = $this->extractArgs();
-
-        return $this;
+        $this->fullUri = $_SERVER['REQUEST_URI'];
+        $this->uri     = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
+        $this->method  = $_SERVER['REQUEST_METHOD'];
+        $this->host    = $_SERVER['HTTP_HOST'];
+        $this->scheme  = $_SERVER['REQUEST_SCHEME'];
+        $this->query   = $_SERVER['QUERY_STRING'];
+        $this->args    = $this->extractArgs();
     }
 
     public function getArg(string $argument)

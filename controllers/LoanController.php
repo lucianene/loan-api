@@ -19,7 +19,7 @@ class LoanController extends BaseController
     {
         $data = $this->loanRepository->all();
 
-        return (new Response($data, 200))->jsonResponse();
+        return (new Response($data, 200))->toJson();
     }
 
     public function create() {}

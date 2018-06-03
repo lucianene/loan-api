@@ -8,23 +8,21 @@ use ReflectionClass;
 
 class Container
 {
-    /**
-     * Dependency registry
-     * @var array
-     */
-    protected $registry = [];
-    protected $instances = [];
-    protected $servicesConfigFile = [];
+    private $registry = [];
+    private $instances = [];
+    private $configServices = [];
 
-    public function __construct($servicesConfig)
+    public function __construct($configServices)
     {
-        if(!file_exists($servicesConfig)) {
-            throw new Exception("File $servicesConfig not found.");
-        }
-        $this->servicesConfigFile = require_once($servicesConfig);
-        foreach ($this->servicesConfigFile as $key => $class) {
+        $this->configServices = load_file_as_array($configServices);
+
+        // register services without custom parameters
+        foreach ($this->configServices as $key => $class) {
             $this->register($key, $class);
         }
+
+        // save the container instance
+        $this->instances['container'] = $this;
     }
 
     /**
@@ -104,7 +102,7 @@ class Container
         foreach($classConstructor->getParameters() as $classParameter)
         {
             if($serviceKey = array_search(
-                $classParameter->getClass()->getName(), $this->servicesConfigFile
+                $classParameter->getClass()->getName(), $this->configServices
             )) {
                 $parameters[] = $this->get($serviceKey);
             }
@@ -112,5 +110,13 @@ class Container
 
         // create the instance
         return new $classString(...$parameters);
+    }
+
+    /**
+     * @return array Binding instances
+     */
+    public function getInstances()
+    {
+        return $this->instances;
     }
 }

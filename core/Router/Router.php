@@ -14,24 +14,20 @@ class Router implements Locatable
 
     private $routes = [];
     private $prefix = '';
+    private $request = null;
 
-    public function handle(Container $container)
+    public function __construct(Container $container, Request $request)
     {
         $this->container = $container;
-        $this->_loadRoutes();
+        $this->request = $request;
 
-        return $this;
-    }
-
-    private function _loadRoutes()
-    {
-        $routesFile = __ROUTES_DIR__ . '/api.php';
+        // load routes
+        $routesFile = routes_dir('/api.php');
         if(!file_exists($routesFile)) {
             throw new Exception("File $routesFile not found.");
         }
         require_once $routesFile;
     }
-
 
     /**
      * Set router uri prefix
@@ -78,28 +74,33 @@ class Router implements Locatable
         return $this->routes;
     }
 
-    private function _matchRoute(Request $request)
+    /**
+     * TODO: match wildcards
+     *
+     * @param  Request $request
+     * @return Route
+     */
+    public function matchRoute(Request $request)
     {
-        // check if route uri&method match
-        $route = array_filter($this->routes, function ($route) use ($request) {
-            if ($request->isUri($route->getUri()) && $route->hasMethod($request->getMethod())) {
-                return $route;
+        // match route
+        foreach($this->routes as $route)
+        {
+            if($request->isUri($route->getUri()) && $route->hasMethod($request->getMethod())) {
+                break;
             }
-        });
+            $route = null;
+        }
 
-        // check if there is a match
         if (!$route) {
             throw new Exceptions\HttpRouteNotFoundException('Route ' . $request->getUri() . ' is invalid.');
         }
 
-        // remove the parent array and return the route
-        return array_pop($route);
+        return $route;
     }
 
-
-    public function dispatch(Request $request)
+    public function dispatch()
     {
-        $route = $this->_matchRoute($request);
+        $route = $this->matchRoute($this->request);
         $route->run();
     }
 }

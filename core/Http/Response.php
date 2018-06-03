@@ -196,9 +196,13 @@ class Response
         return $this;
     }
 
-    public function jsonResponse()
+    public function toJson()
     {
-        echo json_encode($this->sendHeaders()->content);
+        // send the headers
+        $this->sendHeaders();
+
+        // echo the json encoded content
+        echo json_encode($this->content);
     }
 
     public function addHeader($name, $value)
@@ -225,8 +229,6 @@ class Response
 
         // status
         header(sprintf('HTTP/%s %s %s', $this->version, $this->statusCode, $this->statusText), true, $this->statusCode);
-
-        return $this;
     }
 
     /**

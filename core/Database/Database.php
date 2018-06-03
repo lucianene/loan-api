@@ -19,7 +19,7 @@ class Database implements Locatable
     public function __construct()
     {
         // load configuration file
-        $file = __CONFIG_DIR__ . '/database.php';
+        $file = config_dir('/database.php');
         if(!file_exists($file)) {
             throw new Exception("File $file not found.");
         }
@@ -40,7 +40,7 @@ class Database implements Locatable
         try {
             $this->connection = new \PDO("mysql:host=".$this->host.";dbname=".$this->database.";charset=UTF8", $this->user, $this->password);
         } catch(\PDOException $e) {
-            // die(var_dump($e->getMessage()));
+            die($e->getMessage());
         }
     }
 
